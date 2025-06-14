@@ -1,66 +1,69 @@
-💰 Sistema Bancário em Python 🐍
-Um projeto de sistema bancário orientado a objetos (OOP) desenvolvido em Python. Permite a criação de contas correntes e contas poupança, registro de transações (depósitos e saques), e geração de extratos. O objetivo principal é aplicar conceitos de programação orientada a objetos como herança, encapsulamento, polimorfismo e composição.
+# 💰 Sistema Bancário em Python 🐍
 
+Um projeto de **sistema bancário orientado a objetos (OOP)** desenvolvido em **Python**.  
 
+Este sistema permite:
+- Criação de **contas correntes** e **contas poupança**
+- **Registro de transações** (depósitos e saques)
+- **Geração de extratos**
+- Aplicação de conceitos como **herança**, **encapsulamento**, **polimorfismo** e **composição**
 
+---
 
+## 🛠️ Tecnologias utilizadas
+- **Python 3.10+**
+- Programação Orientada a Objetos (POO)
+- Módulo `abc` (classes abstratas)
+- Tipagem estática e boas práticas
+- Interface de terminal (CLI)
 
-🛠️ Tecnologias utilizadas
- Python 3.10+
+---
 
- Orientação a Objetos (POO)
+## 📁 Estrutura do projeto
+.
 
- Módulo abc para classes abstratas
+├── desafio1_poo.py # Arquivo de desafio / inicialização
 
- Tipagem e boas práticas
+├── banco1_poo.py # Lógica principal do sistema
 
- Interface de terminal (CLI)
+└── README.md # Documentação do projeto
 
+---
 
+## 👤 Funcionalidades
+✅ Cadastro de clientes (Pessoa Física)  
+✅ Criação de contas Corrente e Poupança  
+✅ Depósitos e saques com regras específicas  
+✅ Geração de extrato completo por cliente  
+✅ Histórico de transações diárias  
+✅ Limite de saques para Conta Corrente  
+✅ Iterador para listar contas  
 
-📁 Estrutura do Projeto
+---
 
-.desafio1_poo.py
-├── banco1_poo.py              # Arquivo principal com toda a lógica do sistema
-└── README.md            # Este arquivo
+## 🧠 Conceitos aplicados
+- **Encapsulamento:** atributos protegidos (`_`) para uso interno  
+- **Polimorfismo:** `sacar()` tem comportamento diferente em `ContaCorrente` e `ContaPoupanca`  
+- **Herança:** `Cliente` → `PessoaFisica`; `Conta` → `ContaCorrente` / `ContaPoupanca`  
+- **Composição:** `Cliente` contém contas; `Conta` contém `Histórico`  
 
+---
 
-
-👤 Funcionalidades
-✅ Cadastro de clientes (Pessoa Física)
-✅ Criação de contas Corrente ou Poupança
-✅ Depósitos e saques com regras de negócio distintas
-✅ Geração de extrato completo por cliente
-✅ Histórico de transações diárias
-✅ Limite de saques para conta corrente
-✅ Iterador personalizado para exibir lista de contas
-
-
-
-
-
-🧠 Conceitos aplicados
-📦 Encapsulamento: Atributos protegidos com _ para controle interno
-🔁 Polimorfismo: sacar() se comporta diferente em ContaCorrente e ContaPoupanca
-🏗️ Herança: Cliente → PessoaFisica, Conta → ContaCorrente / ContaPoupanca
-⚙️ Composição: Classe Cliente contém contas, Conta possui Historico
-
-
-
-
-
-▶️ Como executar
-Certifique-se de ter o Python 3.10 ou superior instalado.
-Clone o repositório:
-bash
+## ▶️ Como executar
+1️⃣ Certifique-se de ter o **Python 3.10+** instalado.  
+2️⃣ Clone o repositório:
+```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 
+---
 
+3️⃣ Execute o programa:
+python banco1_poo.py
 
+---
 
-
-🖥️ Demonstração (CLI)
+🖥️ Exemplo do menu (CLI)
 =============== MENU ================
 [d] Depositar
 [s] Sacar
@@ -69,21 +72,20 @@ cd nome-do-repositorio
 [lc] Listar contas
 [nu] Novo usuário
 [q] Sair
-=> 
+=>
 
-
-
-
+---
 
 🚀 Melhorias futuras
 Integração com interface gráfica (Tkinter ou Web)
 
 Armazenamento em arquivo ou banco de dados
 
-Suporte para contas jurídicas
+Suporte a contas jurídicas
 
 Autenticação de usuários com senha
 
-👨‍💻 Autor
+---
 
-Feito com 👨‍💻 por Paulo Henrique de Andrade
+👨‍💻 Autor
+Feito com 👨‍💻  por Paulo Henrique de Andrade
